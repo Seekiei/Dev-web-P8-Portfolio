@@ -1,0 +1,53 @@
+.fixed-navbar{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  background-color: #000E32;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    margin: 0 auto;
+}
+
+.logo-nav{
+  width: 100px;
+    margin: 0;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+    margin-right: 60px;
+}
+
+li{
+  position: relative;
+  display: inline-block; 
+}
+
+li a{
+    color: #FFFF;
+    text-decoration: none;
+    font-size: 20px;
+}
+li::after {
+  content: ''; /* Ajoute le contenu de l'élément pseudo-élément */
+  position: absolute; /* Positionne l'élément pseudo-élément par rapport à son parent */
+  bottom: -3px; /* Positionne l'élément pseudo-élément en dessous du texte */
+  left: 0; /* Positionne l'élément pseudo-élément à gauche */
+  width: 100%; /* Définit la largeur de l'élément pseudo-élément sur toute la largeur du parent */
+  height: 2px; /* Définit la hauteur de la barre */
+  background-color: #c8b963; /* Couleur de la barre */
+  opacity: 0; /* Masque initialement la barre */
+  transition: opacity 0.3s; /* Ajoute une transition pour un effet d'apparition en douceur */
+  margin-bottom: -40px;
+}
+li:hover::after {
+  opacity: 1; /* Rend la barre visible */
+}
