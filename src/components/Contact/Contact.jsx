@@ -1,7 +1,7 @@
 import React from 'react'
 import './Contact.scss'
 import logo from "../../assets/devices.svg"
-import linkedin from '../../assets/logo/linkedin-2.webp'
+import linkedin from '../../assets/logo/LinkedIn_logo.png'
 import mail from '../../assets/logo/Mail_(Apple)_logo.png'
 
 function Contact() {
@@ -35,7 +35,7 @@ function Contact() {
                 </div>
             </div>
         </div>
-        
+
         <div className='side-logo'>
             <img src={logo} alt="logo" />
         </div>

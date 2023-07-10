@@ -8,7 +8,7 @@ export default function About() {
         <div className="container-about" id='About'>
             <section className='a-propos'>
                 <div className='container'>
-                    <h2>A Propos de moi </h2>
+                    <h2>À PROPOS DE MOI </h2>
                     <p>
                     En tant que développeur web full stack, je suis passionné par la création d'applications web dynamiques et innovantes. Diplômé en développement web, je possède une expertise en JavaScript et React, des technologies qui alimentent les expériences interactives modernes. Maîtrisant les langages fondamentaux tels que HTML, CSS et JavaScript, je suis également compétent dans l'utilisation des frameworks tels que React, Node.js et Express.js pour construire des applications robustes et efficaces. J'ai également travaillé avec des bases de données NoSQL telles que MongoDB en utilisant le framework Mongoose pour optimiser la gestion des données. De plus, j'ai acquis une solide connaissance de la méthodologie Agile SCRUM, qui me permet de collaborer efficacement au sein d'équipes de développement.
                     </p>

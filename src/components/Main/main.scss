@@ -63,3 +63,41 @@
       }
 }
 
+
+@media (max-width: 900px){
+  .main-container{
+
+    .container-presentation {
+        display: flex;
+        flex-direction: column;
+    
+        .container-img{
+          padding: 50px;
+        }
+    
+        h1 {
+          font-size: 30px;
+        }
+      }
+  }
+}
+
+
+@media (max-width: 1382px){
+  .main-container{
+
+    .container-presentation {
+        display: flex;
+        flex-direction: column;
+    
+        .container-img{
+          padding: 50px;
+        }
+    
+        h1 {
+          text-align: center;
+        }
+      }
+  }
+}
+

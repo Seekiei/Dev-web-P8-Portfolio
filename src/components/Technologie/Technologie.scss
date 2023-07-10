@@ -110,3 +110,51 @@
         }
     }
 }
+
+
+
+
+@media (max-width: 1321px) {
+
+    .main-techno{
+        display: flex;
+        flex-direction: column;
+    
+        .container-titre {
+    
+            h2{
+                text-align: center;
+                color: #EAD1A0;
+                font-size: 30px;
+                margin: 0; 
+                padding-bottom: 10%;
+            }
+        }
+    
+        .grid{
+            flex-direction: column;
+    
+            .dev-part{
+    
+                .container-logos{
+                    justify-items: center;
+                }
+                
+            }
+    
+            .design-part{
+              
+                .container-logos{
+                    justify-items: center;
+                }
+            }
+    
+            .outils-part{
+                
+                .container-logos{
+                    justify-items: center;
+                }
+            }
+        }
+    }
+}

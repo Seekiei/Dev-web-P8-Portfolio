@@ -1,11 +1,4 @@
-.fixed-navbar{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 9999;
-  background-color: #000E32;
-}
+
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -50,4 +43,14 @@ li::after {
 }
 li:hover::after {
   opacity: 1; /* Rend la barre visible */
+}
+
+
+@media (max-width: 740px) {
+
+
+    li a{
+      font-size: 18px;
+    }
+
 }

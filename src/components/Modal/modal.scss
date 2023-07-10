@@ -90,12 +90,28 @@ body.active-modal {
     font-size: 20px;
 }
 
+.main-projets{
+    display: flex;
+    flex-direction: column;
+    padding: 100px 0 0 0;
+
+    .container-titre{
+
+        h2{
+            color: #EAD1A0;
+            margin: 0;
+            text-align: center;
+            font-size: 30px;
+        }
+    }
+}
+
 .projets-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 colonnes égales */
     grid-gap: 20px; /* Espacement entre les photos */
     align-items: center;
-    padding: 30px;
+    padding: 100px;
     
     a {
         width: 100%; /* Pour que les images occupent tout l'espace disponible dans la colonne */
@@ -119,4 +135,20 @@ body.active-modal {
         }
       }
 
+}
+
+@media (max-width: 1321px) {
+
+    .projets-grid{
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+
+        
+        a {
+            width: 80%; 
+            height: 80%; 
+          }
+    
+    }
 }

@@ -33,12 +33,7 @@ function Modal() {
       setModal(!modal);
       setSelectedProjets(image);
     };
-  
-    if (modal) {
-      document.body.classList.add('active-modal');
-    } else {
-      document.body.classList.remove('active-modal');
-    }
+
   
 
   const projets = [
@@ -128,12 +123,18 @@ function Modal() {
 
   return (
     <>
-        <div className='projets-grid'>
+        <div className='main-projets' id='Mes-Projets'>
+            <div className='container-titre'>
+                <h2>MES PROJETS</h2>
+            </div>
+            <div className='projets-grid'>
             {projets.map((projet, index) => (
                 <a href='#Modal' key={index} onClick={() => toggleModal(projet)}>
                    <img src={projet.imageDeCouverture} alt="Imags De Projet" />
                 </a>
             ))}
+        </div>
+
         </div>
 
         {modal && (
