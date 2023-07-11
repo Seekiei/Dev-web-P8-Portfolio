@@ -7,7 +7,10 @@ import html from '../../assets/langages-framework/html-1.svg'
 import css from '../../assets/langages-framework/css.svg'
 import nodejs from '../../assets/langages-framework/nodejs.svg'
 import mongodb from '../../assets/langages-framework/mongodb.png'
-import bootstrap from '../../assets/langages-framework/bootstrap.svg'
+import bootstrap from '../../assets/langages-framework/bootstrap.webp'
+import swagger from '../../assets/langages-framework/Swagger.png'
+import postman from "../../assets/langages-framework/postman.png"
+import sass from "../../assets/langages-framework/sass.png"
 
 import figma from '../../assets/langages-framework/figma.png'
 import photoshop from '../../assets/langages-framework/photoshop.svg'
@@ -19,23 +22,26 @@ import webpack from '../../assets/langages-framework/webpack.svg'
 export default function Technologie() {
 
     const technoImg = [
-        js,
         react,
+        js,
         html,
         css,
+        sass,
         bootstrap,
         nodejs,
         mongodb,
       ];
 
       const designImg = [
-        figma,
-        photoshop
+        photoshop,
+        figma
       ];
 
       const outilsImg = [
         git,
         npm,
+        swagger,
+        postman,
         webpack
       ]
 

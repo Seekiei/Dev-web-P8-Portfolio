@@ -1,5 +1,5 @@
 .main-container{
-    margin-top: 10%;
+    padding-top: 15%;
 
     .container-presentation {
         display: flex;
@@ -30,7 +30,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 10%;
+        padding-top: 15%;
     
         p{
           font-size: 18px;
@@ -55,6 +55,7 @@
         .fa-arrow-down {
           font-size: 25px;
           animation: bounce 1s infinite;
+          cursor: pointer;
         }
         
         .fa-arrow-down:hover {
@@ -64,6 +65,27 @@
 }
 
 
+@media (max-width: 500px){
+
+  .main-container{
+
+    .container-presentation {
+    
+        .container-img{
+      
+          img {
+            width: 200px;
+            height: 200px;
+          }
+        }
+    
+        h1 {
+          font-size: 20px;
+        }
+      }
+  }
+}
+
 @media (max-width: 900px){
   .main-container{
 
@@ -71,14 +93,27 @@
         display: flex;
         flex-direction: column;
     
-        .container-img{
-          padding: 50px;
-        }
-    
         h1 {
-          font-size: 30px;
+          font-size: 25px;
+        }
+
+      }
+
+      .container-scrolldown{
+        
+          
+          
+        .fa-arrow-down {
+          font-size: 25px;
+          animation: none;
+          cursor: pointer;
+        }
+        
+        .fa-arrow-down:hover {
+          animation-play-state: running;
         }
       }
+      
   }
 }
 

@@ -5,7 +5,7 @@ import Technologie from './components/Technologie/Technologie.jsx';
 import Main from './components/Main/Main';
 import Contact from './components/Contact/Contact.jsx';
 import Footer from './components/Footer/Footer';
-import Modal from './components/Modal/Modal';
+import Projets from './components/Projets/Projets.jsx';
 import { BrowserRouter } from "react-router-dom";
 
 // import jira from "../src/assets/jira.png";
@@ -16,7 +16,7 @@ const App = () => {
       <Navbar />
       <Main/>
       <About/>
-      <Modal/>
+      <Projets/>
       <Technologie/>
       <Contact/>
       <Footer/>

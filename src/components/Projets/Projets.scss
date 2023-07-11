@@ -37,7 +37,7 @@ body.active-modal {
     }
 
     hr{
-        width: 50%;
+        width: 100%;
         border: 0.5px solid #EAD1A0 ;
     }
 
@@ -63,9 +63,6 @@ body.active-modal {
 }
 
 .img-container{
-    // width: 100%;
-    // display: flex;
-    // justify-content: center;
     padding-top: 20px;
     padding-bottom: 40px;
     display: grid;
@@ -113,7 +110,7 @@ body.active-modal {
     align-items: center;
     padding: 100px;
     
-    a {
+    .img-projet-container {
         width: 100%; /* Pour que les images occupent tout l'espace disponible dans la colonne */
         height: 100%; /* Pour conserver les proportions originales de l'image */
         object-fit: cover;
@@ -137,18 +134,42 @@ body.active-modal {
 
 }
 
-@media (max-width: 1321px) {
+@media (max-width: 1300px) {
+    
+    .main-projets{
+    
+        .container-titre{
+            padding: 0px 0px 75px 0px;
+        }
+    }
+
+    .modal{
+        display: none;
+    }
 
     .projets-grid{
-        padding: 50px;
+        padding: 10px;
         display: flex;
         flex-direction: column;
 
         
-        a {
+        .img-projet-container {
             width: 80%; 
-            height: 80%; 
+            height: 80%;
+            
+            &:hover {
+                background: none; /* Couleur de fond lors du survol */
+                
+                img {
+                  opacity: 1; /* Opacité de l'image lors du survol */
+                }
+              }
           }
     
+    }
+
+    .img-container{
+        display: flex;
+        flex-direction: column;
     }
 }

@@ -1,5 +1,6 @@
 import React from 'react'
-import './modal.scss'
+import Vollet from '../Vollet/Vollet'
+import './Projets.scss'
 import { useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
@@ -38,7 +39,7 @@ function Modal() {
 
   const projets = [
     {
-        "id": "1",
+        "projet": "1",
         "title": "Créez la page web d'une agence de voyage avec HTML & CSS",
         "annéé": " Décembre-Janvier 2023",
         "Mission" : [
@@ -49,11 +50,11 @@ function Modal() {
         "imageDeCouverture" : projet2booki,
         "images": 
            [booki1,booki2],
-        "link-code" : "https://seekiei.github.io/Dev-web-P2-Booki/"
+        "linkCode" : "https://seekiei.github.io/Dev-web-P2-Booki/"
     },
 
     {
-        "id": "2",
+        "projet": "2",
         "title": "Créez une page web dynamique avec Javascript",
         "annéé": " Fevrier 2023",
 
@@ -65,11 +66,11 @@ function Modal() {
         "Techno" : "JAVASCRIPT HTML CSS",
         "imageDeCouverture" : projet3sophiebluel,
         "images": [sophiebluel1, sophiebluel2 ],
-        "link-code" : "https://github.com/Seekiei/Dev-web-P3-Sophie-Bluel"
+        "linkCode" : "https://github.com/Seekiei/Dev-web-P3-Sophie-Bluel"
     },
 
     {
-        "id": "3",
+        "projet": "3",
         "title": "Planifiez le développement du site de votre client",
         "annéé": "Mars 2023",
         "Mission" : ["Qwenta, un de vos clients, souhaite faire développer un “Menu Maker”. Il s’agit d’un site permettant aux restaurateurs d’afficher et de mettre en page leurs menus facilement, en quelques clics.",
@@ -82,7 +83,7 @@ function Modal() {
     },
 
     {
-        "id": "4",
+        "projet": "4",
         "title": "Débuggez et optimisez un site de photographe",
         "annéé": "Avril 2023",
         "Mission" : "Vous êtes développeur freelance, et vous décidez de proposer vos services d’optimisation SEO à de nouveaux clients. Pour ce faire, vous avez analysé plusieurs sites internet. Parmi vos prospects, il y a le site de Nina Carducci, une photographe dont vous a parlé l’un de vos amis.",
@@ -91,11 +92,11 @@ function Modal() {
         "images": [
             nina1,nina2
         ],
-        "link-code" : "https://github.com/Seekiei/Dev-web-P5-Nina-Carducci"
+        "linkCode" : "https://github.com/Seekiei/Dev-web-P5-Nina-Carducci"
     },
 
     {
-        "id": "5",
+        "projet": "5",
         "title": "Créez une application web de location immobilière avec React",
         "annéé": "Mai 2023",
         "Mission" : "Kasa vous recrute en tant que développeur front-end en freelance pour développer sa nouvelle plateforme web. Kasa est dans le métier de la location d’appartements entre particuliers depuis près de 10 ans maintenant. Avec plus de 500 annonces postées chaque jour, Kasa fait partie des leaders de la location d’appartements entre particuliers en France.",
@@ -104,11 +105,11 @@ function Modal() {
         "images": [
             kasa1,kasa2
         ],
-        "link-code" : "https://github.com/Seekiei/Dev-web-P6-Kasa"
+        "linkCode" : "https://github.com/Seekiei/Dev-web-P6-Kasa"
     },
 
     {
-        "id": "6",
+        "projet": "6",
         "title": "Développez le back-end d'un site de notaion de livres",
         "annéé": "Juin 2023",
         "Mission" : [ "Vous êtes développeur back-end en freelance depuis maintenant un an dans la région de Lille. Vous avez l’habitude de travailler avec Kévin, un développeur front-end plus expérimenté que vous, et qui a déjà un bon réseau de contacts dans le milieu.", "Kévin vous contacte pour vous proposer de travailler avec lui en mutualisant vos compétences front / back sur un tout nouveau projet qui lui a été proposé. Il s’agit d’une petite chaîne de librairies qui souhaite ouvrir un site de référencement et de notation de livres" ],
@@ -117,7 +118,7 @@ function Modal() {
         "images": [
             grimoire1,grimoire2
         ],
-        "link-code" : "https://github.com/Seekiei/Dev-web-P7-Mon-Vieux-Grimoire"
+        "linkCode" : "https://github.com/Seekiei/Dev-web-P7-Mon-Vieux-Grimoire"
     }
   ];
 
@@ -129,14 +130,16 @@ function Modal() {
             </div>
             <div className='projets-grid'>
             {projets.map((projet, index) => (
-                <a href='#Modal' key={index} onClick={() => toggleModal(projet)}>
+                <div className='img-projet-container' key={index} onClick={() => toggleModal(projet)}>
                    <img src={projet.imageDeCouverture} alt="Imags De Projet" />
-                </a>
+                    <Vollet projet={projet.projet} title={projet.title} annéé={projet.annéé} mission={projet.Mission} techno={projet.Techno} images={projet.images} link={projet.linkCode} />
+                </div> 
             ))}
         </div>
 
         </div>
 
+        
         {modal && (
             <div className="modal">
                 <div onClick={toggleModal} className="overlay"></div>
@@ -153,7 +156,7 @@ function Modal() {
                     </div>
                     <hr />
                     <div className='link-container'>
-                        <a href={selectedProjets["link-code"]}>Voir le projet</a> 
+                        <a href={selectedProjets["linkCode"]}>Voir le projet</a> 
                     </div>
                     <FontAwesomeIcon icon={faXmark} style={{color: "#EAD1A0",}} className="close-modal" onClick={toggleModal} />
                 </div>
@@ -164,4 +167,5 @@ function Modal() {
 }
 
 export default Modal
+
 
