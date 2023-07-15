@@ -12,9 +12,9 @@
 header {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 	height: 100px;
-	background-color: #000E32;
+	background: #1b1526;
 	color: white;
 }
 
@@ -37,8 +37,7 @@ header .nav-btn {
 	border: none;
 	outline: none;
 	color: white;
-	visibility: hidden;
-	opacity: 0;
+	display: none;
 	font-size: 1.8rem;
 }
 
@@ -50,10 +49,13 @@ nav {
 
 @media (max-width: 900px) {
 	header .nav-btn {
-		visibility: visible;
-		opacity: 1;
+		display: flex;
 	}
 
+	header {
+		 display: flex;
+		 justify-content: space-between;
+	}
 	header nav {
 		position: fixed;
 		top: -100vh;
@@ -65,7 +67,7 @@ nav {
 		align-items: center;
 		justify-content: center;
 		gap: 1.5rem;
-		background-color: #000E32;
+		background-color: #1b1526;
 		transition: 0.45s;
 	}
 

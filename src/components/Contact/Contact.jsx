@@ -1,8 +1,8 @@
 import React from 'react'
 import './Contact.scss'
-import logo from "../../assets/devices.svg"
 import linkedin from '../../assets/logo/LinkedIn_logo.png'
 import mail from '../../assets/logo/Mail_(Apple)_logo.png'
+import logo from '../../assets/logo/undraw_mailbox_re_dvds (1).svg'
 
 function Contact() {
 
@@ -16,26 +16,18 @@ function Contact() {
 
   return (
     <div className='main-contact' id='Contact'>
-        <div className='container-titre'>
-            <h2>CONTACTEZ-MOI</h2>
-        </div>
         <div className="contact-container">
-            <div className='mail-part'>
-                <h3>Me contacter par Mail</h3>
-                <div className="flex-mail">
-                    <img src={mail} alt="logo-mail" />
-                    <button onClick={handleEmailClick}>Mon Mail</button>
-                </div>
+            <div className='container-titre'>
+                <h2>CONTACTEZ-MOI</h2>
             </div>
-            <div className="linkedin-part">
-                <h3>Me contacter sur Linkedin</h3>
-                <div className="flex-linkedin">
-                    <img src={linkedin} alt="logo-linkedin" />
-                    <button onClick={handleLinkedinClick}>Mon Linkedin</button>
+            <h4>Je suis disponible sur presque tous les réseaux sociaux. Vous pouvez m'envoyer un message, <br/> je vous répondrai dans les 24 heures.</h4>
+            <div className='link-part'>
+                <div className="flex-link">
+                    <img src={mail} alt="logo-mail" onClick={handleEmailClick}/>
+                    <img src={linkedin} alt="logo-linkedin" onClick={handleLinkedinClick} />
                 </div>
             </div>
         </div>
-
         <div className='side-logo'>
             <img src={logo} alt="logo" />
         </div>

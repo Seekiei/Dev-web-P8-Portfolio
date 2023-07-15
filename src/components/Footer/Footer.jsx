@@ -5,7 +5,7 @@ import linkedin from "../../assets/logo/linkedin.png";
 
 function Footer() {
   return (
-    <div className='container-footer'>
+    <footer className='container-footer'>
         <div className="footer-logo">
             <a href="linkedin.com/in/mourad-gharab-015961255">
               <img src={linkedin} alt="logo linkedin" />  
@@ -16,10 +16,10 @@ function Footer() {
         </div>
         <div className="container-text">
             <h3>
-            Réalisez par Mourad Gharab
+            © 2023 Copyright, Made by GHARAB Mourad
             </h3>
         </div>
-    </div>
+    </footer>
   )
 }
 

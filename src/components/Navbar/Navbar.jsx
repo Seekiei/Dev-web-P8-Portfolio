@@ -3,6 +3,7 @@ import logo from "../../assets/logo/logo.png";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { motion } from 'framer-motion';
 
 function Navbar() {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -22,11 +23,11 @@ function Navbar() {
       };
 
 	return (
-		<header>
+		<motion.header initial={{ opacity: 0, x: -100 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1.5 }} >
 			<Link to="/"><img className='logo-nav' src={logo} alt="Logo" /></Link>
 			<nav className={isMenuOpen ? "responsive_nav" : ""}>
-        <a href="#About" onClick={handleClick}>A Propos</a>
-				<a href="#Mes-Projets" onClick={handleClick}>Mes Projets</a>
+        <a href="#About" onClick={handleClick}>About Me</a>
+				<a href="#Mes-Projets" onClick={handleClick}>Project</a>
 				<a href="#Technologie" onClick={handleClick}>Technologie</a>
 				<a href="#Contact" onClick={handleClick}>Contact</a>
 				<button className={`nav-btn ${isMenuOpen ? 'nav-close-btn' : ''}`} onClick={showBurgerMenu} >
@@ -36,7 +37,7 @@ function Navbar() {
 			<button className={`nav-btn ${isMenuOpen ? 'nav-close-btn' : ''}`} onClick={showBurgerMenu} >
         {isMenuOpen ? <FaTimes /> : <FaBars />}
       </button>
-		</header>
+		</motion.header>
 	);
 }
 

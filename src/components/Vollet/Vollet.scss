@@ -7,7 +7,7 @@
         justify-content: space-between;
         align-items: center;
         background-color: rgba(31, 73, 112, 0.514);
-        height: 50px;
+        height: 70px;
         padding: 0 1%;
         border-radius: 8px;
         cursor: pointer;
@@ -29,6 +29,7 @@
             font-size: 20px;
             margin: 0px 0px 0px 10px;
             font-weight: bold;
+            width: 85%;
         }
 
         img{
@@ -57,24 +58,34 @@
             padding: 10px 0 10px 0;
         }
 
-        hr{
-            width: 100%;
-            border: 0.5px solid #EAD1A0 ;
+        .techno{
+            list-style: none;
+            display: flex;
+            gap: 10px;
+            padding: 0;
+            margin: 10px 0px;
+    
+            li{
+                    background-color: #1b1526;
+                    font-size: 14px;
+                    padding: 6px 13px 6px 13px;
+                    border-radius: 15px;
+                    color: #EAD1A0;
+                }
         }
 
+
         .link-container{
-            margin: 40px 0 20px 0;
+            margin: 20px 0 20px 0;
             text-align: center;
     
             a{
-                color: white;
+                color: #EAD1A0;
                 text-decoration: none;
-                color: black;
                 text-decoration: none;
-                background-color: #EAD1A0;
+                background-color: #1b1526;
                 padding: 15px;
                 border-radius: 10px;
-                font-weight: bold;
             }
         }
     }
@@ -89,6 +100,21 @@
     
 }
 
+@media (max-width: 1300px) {
+
+    .collapse {
+    
+        .collapse-toggle {
+          
+    
+            h3 {
+                font-size: 16px;
+            }
+            
+        }
+    }
+}
+
 @media (max-width: 900px) {
 
     .collapse {
@@ -100,6 +126,31 @@
                 font-size: 15px;
             }
             
+        }
+
+        .collapse-content{
+
+            h2{
+                font-size: 20px;
+            }
+
+            p{
+                font-size: 15px;
+            }
+
+            .techno {
+    
+                li{
+                    font-size: 12px;
+                }
+            }
+        }
+
+        .link-container{
+    
+            a{
+                font-size: 17px;
+            }
         }
     }
 }
@@ -122,6 +173,12 @@
                 font-size: 12px;
             }
             
+        }
+        .link-container{
+    
+            a{
+                font-size: 12px;
+            }
         }
     }
 }

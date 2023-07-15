@@ -1,9 +1,9 @@
 .main-techno{
     display: flex;
     flex-direction: column;
+    padding: 50px;
 
     .container-titre {
-        padding: 70px 0 0 0;
 
         h2{
             text-align: center;
@@ -111,9 +111,67 @@
     }
 }
 
+@media (max-width: 460px){
+
+    .grid{
+
+        .dev-part{
+            
+            .dev-container{
+
+                .container-logos{
+                    grid-template-columns: repeat(1, 1fr); 
+                    padding: 60px;
 
 
-@media (max-width: 500px){
+                    img{
+                        width: 50px;
+                    }
+                }
+            }
+
+            
+        }
+
+        .design-part{
+          
+            .design-container{
+               
+
+                .container-logos{ 
+                    grid-template-columns: repeat(1, 1fr);
+                    padding: 60px;
+
+
+                    img{
+                        width: 50px;
+                    }
+                }
+            }
+        }
+
+        .outils-part{
+            
+            .outils-container{
+                
+                h3{
+                    font-size: 20px;
+                }
+                .container-logos{
+                    grid-template-columns: repeat(1, 1fr);
+                    padding: 60px;
+
+
+                    img{
+                        width: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 582px){
 
     .grid{
 
