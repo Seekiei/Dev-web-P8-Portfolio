@@ -27,14 +27,11 @@
         object-fit: cover;
         border-radius: 8px;
         cursor: pointer;
-      
-        &:hover {
-          background: rgba(0, 0, 0, 0.95); /* Couleur de fond lors du survol */
-          
-          img {
-            opacity: 0.8; /* Opacité de l'image lors du survol */
-          }
+
+        .vvv{
+            height: 100%;
         }
+
       
         img {
           width: 100%; /* Pour que les images occupent tout l'espace disponible dans la colonne */
@@ -65,8 +62,7 @@
     line-height: 1.4;
     background: white;
     padding: 50px;
-    border-radius: 8px;
-    width: 50%;
+    border-radius: 12px;
 }
 
 .modal-content {
@@ -126,7 +122,7 @@
 
 .img-container{
     padding-top: 20px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
@@ -184,5 +180,6 @@
     .img-container{
         display: flex;
         flex-direction: column;
+        padding-bottom: 20px;
     }
 }

@@ -2,17 +2,23 @@ import React from 'react'
 import './Footer.scss'
 import github from "../../assets/logo/github.svg";
 import linkedin from "../../assets/logo/linkedin.png";
+import { Link } from 'react-router-dom';
 
 function Footer() {
+
+  const openInNewTab = (url) => (
+    window.open(url, '_blank', 'noreferrer')
+)
+
   return (
     <footer className='container-footer'>
         <div className="footer-logo">
-            <a href="linkedin.com/in/mourad-gharab-015961255">
+            <Link role='link' onClick={() => openInNewTab('https://linkedin.com/in/mourad-gharab-015961255')}>
               <img src={linkedin} alt="logo linkedin" />  
-            </a>
-            <a href="https://github.com/Seekiei">
+            </Link>
+            <Link role='link' onClick={() => openInNewTab('https://github.com/Seekiei')}>
               <img src={github} alt="logo github" /> 
-            </a>
+            </Link>
         </div>
         <div className="container-text">
             <h3>

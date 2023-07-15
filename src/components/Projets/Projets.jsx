@@ -38,7 +38,7 @@ function Modal() {
 
   const projets = [
     {
-        "projet": "1",
+        "projet": "Booki",
         "title": "Créez la page web d'une agence de voyage avec HTML & CSS",
         "annéé": " Décembre-Janvier 2023",
         "Mission" : [
@@ -56,7 +56,7 @@ function Modal() {
     },
 
     {
-        "projet": "2",
+        "projet": "Sophie Bluel",
         "title": "Créez une page web dynamique avec Javascript",
         "annéé": " Fevrier 2023",
 
@@ -78,7 +78,7 @@ function Modal() {
     },
 
     {
-        "projet": "3",
+        "projet": "Qwenta",
         "title": "Planifiez le développement du site de votre client",
         "annéé": "Mars 2023",
         "Mission" : [
@@ -96,7 +96,7 @@ function Modal() {
     },
 
     {
-        "projet": "4",
+        "projet": "Nina Carducci",
         "title": "Débuggez et optimisez un site de photographe",
         "annéé": "Avril 2023",
         "Mission" : [
@@ -116,7 +116,7 @@ function Modal() {
     },
 
     {
-        "projet": "5",
+        "projet": "Kasa",
         "title": "Créez une application web de location immobilière avec React",
         "annéé": "Mai 2023",
         "Mission" : [
@@ -137,7 +137,7 @@ function Modal() {
     },
 
     {
-        "projet": "6",
+        "projet": "Mon Vieux Grimoire",
         "title": "Développez le back-end d'un site de notaion de livres",
         "annéé": "Juin 2023",
         "Mission" : [ 
@@ -160,20 +160,22 @@ function Modal() {
 
   return (
     <>
-        <div className='main-projets' id='Mes-Projets'>
+        <section className='main-projets' id='Mes-Projets'>
             <div className='container-titre'>
                 <h2>PROJETS RÉALISÉS</h2>
             </div>
             <div className='projets-grid'>
             {projets.map((projet, index) => (
                 <div className='img-projet-container' key={index} onClick={() => toggleModal(projet)}>
-                   <img src={projet.imageDeCouverture} alt="Imags De Projet" />
-                   <Vollet projet={projet.projet} title={projet.title} annéé={projet.annéé} mission={projet.Mission} techno={projet.Techno} images={projet.images} link={projet.linkCode} />
+                <motion.div className='vvv' whileHover={{ scale: 0.98 }} transition={{ duration: 0.3 }} >
+                    <img src={projet.imageDeCouverture} alt="Imags De Projet" />
+                </motion.div>
+                <Vollet projet={projet.projet} title={projet.title} annéé={projet.annéé} mission={projet.Mission} techno={projet.Techno} images={projet.images} link={projet.linkCode} />
                 </div> 
             ))}
         </div>
 
-        </div>
+        </section>
 
         
         {modal && (

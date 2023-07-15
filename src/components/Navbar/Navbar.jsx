@@ -30,11 +30,11 @@ function Navbar() {
 				<a href="#Mes-Projets" onClick={handleClick}>Project</a>
 				<a href="#Technologie" onClick={handleClick}>Technologie</a>
 				<a href="#Contact" onClick={handleClick}>Contact</a>
-				<button className={`nav-btn ${isMenuOpen ? 'nav-close-btn' : ''}`} onClick={showBurgerMenu} >
+				<button type="button" value="Input" className={`nav-btn ${isMenuOpen ? 'nav-close-btn' : ''}`} onClick={showBurgerMenu} >
 					<FaTimes />
 				</button>
 			</nav>
-			<button className={`nav-btn ${isMenuOpen ? 'nav-close-btn' : ''}`} onClick={showBurgerMenu} >
+			<button type="button" className={`nav-btn ${isMenuOpen ? 'nav-close-btn' : ''}`} onClick={showBurgerMenu} >
         {isMenuOpen ? <FaTimes /> : <FaBars />}
       </button>
 		</motion.header>

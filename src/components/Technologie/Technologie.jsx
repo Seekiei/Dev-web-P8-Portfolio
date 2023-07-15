@@ -1,5 +1,6 @@
 import React from 'react'
 import './Technologie.scss'
+import { motion } from 'framer-motion'
 
 import react from '../../assets/langages-framework/react.svg'
 import js from '../../assets/langages-framework/logo-javascript.svg'
@@ -47,7 +48,7 @@ export default function Technologie() {
 
 
   return (
-    <div className='main-techno' id='Technologie'>
+    <section className='main-techno' id='Technologie'>
         <div className='container-titre'>
             <h2>
                 TECHNOLOGIE
@@ -62,7 +63,7 @@ export default function Technologie() {
                     <p>Langages utilisés</p>
                     <div className='container-logos'>
                     {technoImg.map((image, index) => (
-                        <img key={index} src={image} alt="logo" />
+                        <motion.img whileHover={{ scale: 0.8 }} transition={{ duration: 0.3 }} key={index} src={image} alt="logo" />
                      ))}
                     </div>
                 </div>
@@ -75,7 +76,7 @@ export default function Technologie() {
                     <p>Logiciels utilisés</p>
                     <div className='container-logos'>
                         {designImg.map((image, index) => (
-                            <img key={index} src={image} alt="logo" />
+                            <motion.img whileHover={{ scale: 0.8 }} transition={{ duration: 0.3 }} key={index} src={image} alt="logo" />
                         ))}
                     </div>
                 </div>
@@ -84,10 +85,11 @@ export default function Technologie() {
             <div className='outils-part'>
                 <div className='outils-container'>
                     <h3>Outils de Développement</h3>
+                    <h4>Facilite la création d'application web et mobile</h4>
                     <p>Outils utilisés</p>
                     <div className='container-logos'>
                         {outilsImg.map((image, index) => (
-                            <img key={index} src={image} alt="logo" />
+                            <motion.img whileHover={{ scale: 0.8 }} transition={{ duration: 0.3 }} key={index} src={image} alt="logo" />
                         ))}
                     </div>
                 </div>
@@ -95,6 +97,6 @@ export default function Technologie() {
                 
             
         </div>
-    </div>
+    </section>
   )
 }

@@ -11,7 +11,7 @@ function Main() {
     
 
   return (
-    <section class="banner">
+    <section className="banner">
       <div className='banner-presentation'>
         <div className="container-img">
           <motion.img src={gear5} alt='pdp' initial={{ opacity: 0, y: -100 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1.5 }}/>  

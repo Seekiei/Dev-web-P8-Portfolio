@@ -11,7 +11,7 @@ function Vollet({projet, mission, title, annéé, techno, images, link}) {
     return(
         <motion.div className="collapse"  >
             <motion.div className='collapse-toggle' onClick={() => setIsOpen(!isOpen)} initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.3 }} >
-                <h3>Projet N°{projet} : {title}</h3>
+                <h3>{projet}</h3>
                 <div className='collapse-img'>
                 {isOpen ? <FaArrowUp/> : <FaArrowDown/> }
                 </div>   
