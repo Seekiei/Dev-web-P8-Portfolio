@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/Dev-web-P8-Portfolio/static/css/main.a2740b4b.css",
-    "main.js": "/Dev-web-P8-Portfolio/static/js/main.5c2cb0be.js",
-    "static/media/qwenta1.png": "/Dev-web-P8-Portfolio/static/media/qwenta1.d299c0222be7cfdfa9ac.png",
-    "static/media/Projet3sophiebluel.png": "/Dev-web-P8-Portfolio/static/media/Projet3sophiebluel.55167dd619c78a98c840.png",
-    "static/media/kasa-1.png": "/Dev-web-P8-Portfolio/static/media/kasa-1.7942591e6e94bf45a1a1.png",
-    "static/media/nina-1.png": "/Dev-web-P8-Portfolio/static/media/nina-1.5db4b19e3fa3e4c561ed.png",
-    "static/media/nina-2.png": "/Dev-web-P8-Portfolio/static/media/nina-2.4503c24500fc175b4264.png",
-    "static/media/qwenta2.png": "/Dev-web-P8-Portfolio/static/media/qwenta2.f629622ec80587e9fbeb.png",
-    "static/media/projet2booki.png": "/Dev-web-P8-Portfolio/static/media/projet2booki.644ed0ed77c96d6149d1.png",
-    "static/media/booki-2.png": "/Dev-web-P8-Portfolio/static/media/booki-2.951ebbba229410ad2ab7.png",
-    "static/media/grimoire-1.png": "/Dev-web-P8-Portfolio/static/media/grimoire-1.c37c9b34a5d7a6b5ebd6.png",
-    "static/media/sophie-2.png": "/Dev-web-P8-Portfolio/static/media/sophie-2.9d3fc301a96ea328dd27.png",
-    "static/media/kasa-2.png": "/Dev-web-P8-Portfolio/static/media/kasa-2.ae08292ed35a9563ac72.png",
-    "static/media/sophie-1.png": "/Dev-web-P8-Portfolio/static/media/sophie-1.9f6f88a54cfb80b941bb.png",
-    "static/media/grimoire-2.png": "/Dev-web-P8-Portfolio/static/media/grimoire-2.b649fd1be3f97431d4b0.png",
-    "static/media/projet6kasa.jpg": "/Dev-web-P8-Portfolio/static/media/projet6kasa.1962a18e19d2883ccedd.jpg",
-    "static/media/projet5ninacarducci.jpg": "/Dev-web-P8-Portfolio/static/media/projet5ninacarducci.7b8e20cca913261e33d7.jpg",
-    "static/media/projet7monvieuxgrimoire.jpg": "/Dev-web-P8-Portfolio/static/media/projet7monvieuxgrimoire.95eff6226e7d3357466d.jpg",
+    "main.js": "/Dev-web-P8-Portfolio/static/js/main.92ae0653.js",
+    "static/media/pdp.webp": "/Dev-web-P8-Portfolio/static/media/pdp.182b02fed39d2cee5727.webp",
+    "static/media/Projet3sophiebluel.webp": "/Dev-web-P8-Portfolio/static/media/Projet3sophiebluel.5a542a11241a33df2352.webp",
+    "static/media/projet6kasa.webp": "/Dev-web-P8-Portfolio/static/media/projet6kasa.00322835730d2beaa4be.webp",
     "static/media/booki-1.webp": "/Dev-web-P8-Portfolio/static/media/booki-1.2d3c880cd7636fd7fcdc.webp",
-    "static/media/projet4qwenta.jpg": "/Dev-web-P8-Portfolio/static/media/projet4qwenta.cf44ea3a153a93f27627.jpg",
-    "static/media/gear5.jpeg": "/Dev-web-P8-Portfolio/static/media/gear5.ad809e71de0ef0efeb6e.jpeg",
+    "static/media/kasa-1.webp": "/Dev-web-P8-Portfolio/static/media/kasa-1.815d6fc5b256982c63c5.webp",
+    "static/media/projet5ninacarducci.webp": "/Dev-web-P8-Portfolio/static/media/projet5ninacarducci.dd63bd408d2653f5f4ca.webp",
+    "static/media/booki-2.webp": "/Dev-web-P8-Portfolio/static/media/booki-2.db1faddcd6e2ca72fc38.webp",
+    "static/media/projet7monvieuxgrimoire.webp": "/Dev-web-P8-Portfolio/static/media/projet7monvieuxgrimoire.b75365c30604f9c79a67.webp",
+    "static/media/projet2booki.webp": "/Dev-web-P8-Portfolio/static/media/projet2booki.bcbb352eb3179b074196.webp",
+    "static/media/kasa-2.webp": "/Dev-web-P8-Portfolio/static/media/kasa-2.c1ad0afe08cbb70a8c07.webp",
+    "static/media/nina-2.webp": "/Dev-web-P8-Portfolio/static/media/nina-2.33efcecd0fa8e9184c64.webp",
+    "static/media/qwenta1.webp": "/Dev-web-P8-Portfolio/static/media/qwenta1.d9bc4b05d64df1f1b37f.webp",
+    "static/media/nina-1.webp": "/Dev-web-P8-Portfolio/static/media/nina-1.e94e7829ae527b3f20c8.webp",
+    "static/media/projet4qwenta.webp": "/Dev-web-P8-Portfolio/static/media/projet4qwenta.c025cdb5f66c3dbf56e1.webp",
+    "static/media/grimoire-1.webp": "/Dev-web-P8-Portfolio/static/media/grimoire-1.b990d7250166688b88bc.webp",
+    "static/media/grimoire-2.webp": "/Dev-web-P8-Portfolio/static/media/grimoire-2.4f5cdadadd6205cf52d8.webp",
+    "static/media/sophie-2.webp": "/Dev-web-P8-Portfolio/static/media/sophie-2.3fa387ce42984d1110c6.webp",
+    "static/media/qwenta2.webp": "/Dev-web-P8-Portfolio/static/media/qwenta2.508081e571118b98678c.webp",
+    "static/media/sophie-1.webp": "/Dev-web-P8-Portfolio/static/media/sophie-1.5b27db6f263142b38c65.webp",
     "static/media/logo.png": "/Dev-web-P8-Portfolio/static/media/logo.430e9a195ed3396ed9a3.png",
     "static/media/sass.png": "/Dev-web-P8-Portfolio/static/media/sass.c5da83bb9ff45b84e0e7.png",
     "static/media/undraw_programming_re_kg9v.svg": "/Dev-web-P8-Portfolio/static/media/undraw_programming_re_kg9v.5be48957a5eec07943eefeebdd542b12.svg",
@@ -46,10 +46,10 @@
     "static/media/html-1.svg": "/Dev-web-P8-Portfolio/static/media/html-1.f318c8b1d5945fa9adc827ae94849cb1.svg",
     "static/media/linkedin.svg": "/Dev-web-P8-Portfolio/static/media/linkedin.0618cc9075b54a042c69cdf3e1cb1fa4.svg",
     "main.a2740b4b.css.map": "/Dev-web-P8-Portfolio/static/css/main.a2740b4b.css.map",
-    "main.5c2cb0be.js.map": "/Dev-web-P8-Portfolio/static/js/main.5c2cb0be.js.map"
+    "main.92ae0653.js.map": "/Dev-web-P8-Portfolio/static/js/main.92ae0653.js.map"
   },
   "entrypoints": [
     "static/css/main.a2740b4b.css",
-    "static/js/main.5c2cb0be.js"
+    "static/js/main.92ae0653.js"
   ]
 }
