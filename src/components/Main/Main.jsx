@@ -1,6 +1,6 @@
 import React from 'react'
 import './main.scss'
-import pdp from "../../assets/logo/gear5.jpeg";
+import pdp from "../../assets/logo/pdp.webp";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-scroll';

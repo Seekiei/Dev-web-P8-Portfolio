@@ -6,25 +6,25 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faXmark } from '@fortawesome/free-solid-svg-icons'
 import { motion } from "framer-motion"
 
-import projet6kasa from "../../assets/Projets/projet6kasa.jpg";
-import projet7monvieuxgrimoire from "../../assets/Projets/projet7monvieuxgrimoire.jpg";
-import projet5ninacarducci from "../../assets/Projets/projet5ninacarducci.jpg";
-import projet3sophiebluel from "../../assets/Projets/Projet3sophiebluel.png";
-import projet4qwenta from "../../assets/Projets/projet4qwenta.jpg";
-import projet2booki from "../../assets/Projets/projet2booki.png";
+import projet6kasa from "../../assets/Projets/projet6kasa.webp";
+import projet7monvieuxgrimoire from "../../assets/Projets/projet7monvieuxgrimoire.webp";
+import projet5ninacarducci from "../../assets/Projets/projet5ninacarducci.webp";
+import projet3sophiebluel from "../../assets/Projets/Projet3sophiebluel.webp";
+import projet4qwenta from "../../assets/Projets/projet4qwenta.webp";
+import projet2booki from "../../assets/Projets/projet2booki.webp";
 
-import sophiebluel1 from "../../assets/Projets/sophie-1.png"
-import sophiebluel2 from "../../assets/Projets/sophie-2.png"
-import nina1 from "../../assets/Projets/nina-1.png"
-import nina2 from "../../assets/Projets/nina-2.png"
+import sophiebluel1 from "../../assets/Projets/sophie-1.webp"
+import sophiebluel2 from "../../assets/Projets/sophie-2.webp"
+import nina1 from "../../assets/Projets/nina-1.webp"
+import nina2 from "../../assets/Projets/nina-2.webp"
 import booki2 from "../../assets/Projets/booki-1.webp"
-import booki1 from "../../assets/Projets/booki-2.png"
-import grimoire1 from "../../assets/Projets/grimoire-1.png"
-import grimoire2 from "../../assets/Projets/grimoire-2.png"
-import kasa1 from "../../assets/Projets/kasa-1.png"
-import kasa2 from "../../assets/Projets/kasa-2.png"
-import qwenta1 from "../../assets/Projets/qwenta1.png"
-import qwenta2 from "../../assets/Projets/qwenta2.png"
+import booki1 from "../../assets/Projets/booki-2.webp"
+import grimoire1 from "../../assets/Projets/grimoire-1.webp"
+import grimoire2 from "../../assets/Projets/grimoire-2.webp"
+import kasa1 from "../../assets/Projets/kasa-1.webp"
+import kasa2 from "../../assets/Projets/kasa-2.webp"
+import qwenta1 from "../../assets/Projets/qwenta1.webp"
+import qwenta2 from "../../assets/Projets/qwenta2.webp"
 
 function Modal() {
     
