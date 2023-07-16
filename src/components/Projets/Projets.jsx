@@ -17,7 +17,7 @@ import sophiebluel1 from "../../assets/Projets/sophie-1.png"
 import sophiebluel2 from "../../assets/Projets/sophie-2.png"
 import nina1 from "../../assets/Projets/nina-1.png"
 import nina2 from "../../assets/Projets/nina-2.png"
-import booki2 from "../../assets/Projets/booki-1.png"
+import booki2 from "../../assets/Projets/booki-1.webp"
 import booki1 from "../../assets/Projets/booki-2.png"
 import grimoire1 from "../../assets/Projets/grimoire-1.png"
 import grimoire2 from "../../assets/Projets/grimoire-2.png"
@@ -198,7 +198,7 @@ function Modal() {
                             ))}
                         </div>
                         <div className='link-container'>
-                            <a href={selectedProjets["linkCode"]}>Voir le projet</a> 
+                            <a href={selectedProjets["linkCode"]}>Voir le code</a> 
                         </div>
                         <FontAwesomeIcon icon={faXmark} style={{color: "#1b1526",}} className="close-modal" onClick={toggleModal} />
                     </motion.div>

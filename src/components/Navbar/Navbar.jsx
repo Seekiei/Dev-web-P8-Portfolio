@@ -23,7 +23,7 @@ function Navbar() {
       };
 
 	return (
-		<motion.header initial={{ opacity: 0, x: -100 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 1.5 }} >
+		<motion.header initial={{ opacity: 0, x: -100 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 2 }} >
 			<Link to="/"><img className='logo-nav' src={logo} alt="Logo" /></Link>
 			<nav className={isMenuOpen ? "responsive_nav" : ""}>
         <a href="#About" onClick={handleClick}>About Me</a>

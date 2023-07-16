@@ -4,7 +4,6 @@ import github from "../../assets/logo/github.svg";
 import linkedin from "../../assets/logo/linkedin.svg";
 import svg from "../../assets/logo/undraw_programming_re_kg9v.svg"
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
 
 export default function About() {
 
@@ -23,22 +22,18 @@ export default function About() {
                         <div className='logo-profils'>
                             <span className="background">
                                 <span className="social-media-buttons">
-                                    <Link role='link' onClick={() => openInNewTab('https://github.com/Seekiei')}>
-                                        <span className="social-media-button">
+                                        <span className="social-media-button" onClick={() => openInNewTab('https://github.com/Seekiei')}>
                                             <img
                                                 alt="Github"
                                                 src={github}
                                             />
                                         </span>
-                                    </Link>
-                                    <Link role='link' onClick={() => openInNewTab('https://linkedin.com/in/mourad-gharab-015961255')}>
-                                        <span className="social-media-button">
+                                        <span className="social-media-button" onClick={() => openInNewTab('https://linkedin.com/in/mourad-gharab-015961255')}>
                                             <img
                                                 alt="LinkedIn"
                                                 src={linkedin}
                                             /> 
                                         </span>
-                                    </Link>
                                 </span>
                             </span>
                         </div>

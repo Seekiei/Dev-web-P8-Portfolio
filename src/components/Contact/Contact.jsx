@@ -18,7 +18,7 @@ function Contact() {
             <div className='container-titre'>
                 <h2>CONTACTEZ-MOI</h2>
             </div>
-            <h3>Je suis disponible sur presque tous les réseaux sociaux. Vous pouvez m'envoyer un message, <br/> je vous répondrai dans les 24 heures.</h3>
+            <h3>Je suis présent sur la plupart des plateformes de réseau sociaux.<br />N'hésitez pas à m'envoyer un message et je vous répondrai dans les 24 heures.</h3>
             <div className='link-part'>
                 <div className="flex-link">
                     <Link role='link' onClick={() => openInNewTab('mailto:gharab.mourad.contact@gmail.com')}>

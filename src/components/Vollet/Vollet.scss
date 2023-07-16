@@ -7,7 +7,7 @@
         justify-content: space-between;
         align-items: center;
         background-color: rgb(50 51 53 / 55%);
-        height: 70px;
+        height: 60px;
         padding: 0 1%;
         border-radius: 8px;
         cursor: pointer;
@@ -66,11 +66,11 @@
             margin: 10px 0px;
     
             li{
-                    background-color: #1b1526;
+                    background-color: #EAD1A0;
                     font-size: 14px;
                     padding: 6px 13px 6px 13px;
                     border-radius: 15px;
-                    color: #EAD1A0;
+                    color: black;
                 }
         }
 
@@ -80,10 +80,10 @@
             text-align: center;
     
             a{
-                color: #EAD1A0;
+                color: black;
                 text-decoration: none;
                 text-decoration: none;
-                background-color: #1b1526;
+                background-color: #EAD1A0;
                 padding: 15px;
                 border-radius: 10px;
             }
