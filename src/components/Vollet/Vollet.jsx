@@ -34,7 +34,7 @@ function Vollet({projet, mission, title, annéé, techno, images, link}) {
                         ))}
                     </div>
                     <div className='link-container'>
-                        <a href={link}>Voir le projet</a> 
+                        <a href={link}>Voir le code</a> 
                     </div>
                 </motion.div>}
             </AnimatePresence>

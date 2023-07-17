@@ -12,6 +12,7 @@ import bootstrap from '../../assets/langages-framework/bootstrap.webp'
 import swagger from '../../assets/langages-framework/Swagger.png'
 import postman from "../../assets/langages-framework/postman.png"
 import sass from "../../assets/langages-framework/sass.png"
+import express from "../../assets/langages-framework/express.png"
 
 import figma from '../../assets/langages-framework/figma.png'
 import photoshop from '../../assets/langages-framework/photoshop.svg'
@@ -30,6 +31,7 @@ export default function Technologie() {
         sass,
         bootstrap,
         nodejs,
+        express,
         mongodb,
       ];
 
