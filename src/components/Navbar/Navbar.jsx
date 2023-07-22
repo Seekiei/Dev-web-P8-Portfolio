@@ -27,8 +27,8 @@ function Navbar() {
 			<Link to="/"><img className='logo-nav' src={logo} alt="Logo" /></Link>
 			<nav className={isMenuOpen ? "responsive_nav" : ""}>
         <a href="#About" onClick={handleClick}>About Me</a>
+        <a href="#Technologie" onClick={handleClick}>Technologie</a>
 				<a href="#Mes-Projets" onClick={handleClick}>Project</a>
-				<a href="#Technologie" onClick={handleClick}>Technologie</a>
 				<a href="#Contact" onClick={handleClick}>Contact</a>
 				<button type="button" value="Input" className={`nav-btn ${isMenuOpen ? 'nav-close-btn' : ''}`} onClick={showBurgerMenu} >
 					<FaTimes />

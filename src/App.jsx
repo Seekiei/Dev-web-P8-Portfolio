@@ -8,16 +8,14 @@ import Footer from './components/Footer/Footer.jsx';
 import Projets from './components/Projets/Projets.jsx';
 import { BrowserRouter } from "react-router-dom";
 
-// import jira from "../src/assets/jira.png";
-
 const App = () => {
   return (
     <BrowserRouter>
       <Navbar />
       <Main/>
       <About/>
-      <Projets/>
       <Technologie/>
+      <Projets/>
       <Contact/>
       <Footer/>
     </BrowserRouter>

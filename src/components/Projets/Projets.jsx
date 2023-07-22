@@ -45,6 +45,9 @@ function Modal() {
             "L’entreprise souhaite développer un site Internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix,",
             " vous êtes chargé d'intégrer l'interface du site avec du code HTML et CSS. Respect du rendu visuel du projet en versions mobile, tablette et desktop. "
         ],
+
+        "problématiques" : "Garantir que la page est accessible à tous les utilisateurs, format mobiles et tablettes (Responsive)",
+
         "Techno" : [
             "Html", 
             "Css"
@@ -65,6 +68,8 @@ function Modal() {
             " mise en place d'une page d'authentification pour l'administrateur du site,",
             " ajout de boutons pour trier les médias et implémentation d'une modale permettant d'en uploader des nouveaux,",
             " récupération des données via des appels à l'API."],
+        
+        "problématiques" : "Gérer les erreurs provenant de l'API lors de la suppression d'images, en cas d'échec de la requête",   
 
         "Techno" : [
             "Javascript",
@@ -87,8 +92,11 @@ function Modal() {
             " présentation de l'outil de gestion de projet avec le déroulé précis du projet,",
             "travail en collaboration avec le client avec la mise en place d'un plan de communication.",
         ],
+
+        "problématiques" : "Pas de problématiques rencontrées",
+
         "Techno" : [
-            
+            'Jira'
         ],
         "imageDeCouverture" : projet4qwenta,
         "images": [ qwenta1, qwenta2
@@ -103,7 +111,10 @@ function Modal() {
             "Débugguer et optimiser du site web du client,",
             " ajout des données afin d'ameliorer le réferencement local,",
             " rédaction d'un rapport d'intervention détaillant un avant/après des performances en se basant sur des audit Lighthouse, la liste des modifications et une liste des cas d'usage du site.",],
-            "Techno" : [
+
+        "problématiques" : "L'optimisations des images, ainsi que la mimification des scripts javaScript et Css",
+
+        "Techno" : [
                 "JQuery",
                 "Html", 
                 "Css"
@@ -124,6 +135,9 @@ function Modal() {
             " création complète du site et des différentes pages avec react-router,",
             " ajout de composant React réutilisable et dynamique avec pour certains une gestion des data,",
             " présentation du projet au CTO en justifiant et défendant les décisions techniques."],
+
+        "problématiques" : "Gérer la récupération et la manipulation des données liées aux annonces immobilières, telles que les détails des propriétés, les images, les caractéristiques, etc. , et React Router pour gérer la navigation entre les différentes pages de l'application", 
+
         "Techno" : [
             "React",
             "Html", 
@@ -145,6 +159,9 @@ function Modal() {
             " mise en place de la structure du code (contrôleurs, routeurs, etc.),",
             " sécurisation de la base de données et optimisation des images,",
             " création d'un système d'authentification à mail unique.", ],
+
+        "problématiques" : " Implémentation d'un mécanisme permettant d'afficher la note globale sur 5 étoiles pour chaque livre. et ce dernier est calculée en fonction des évaluations données par les autres clients ",
+
         "Techno" : [
             "Node.Js",
             "Express.Js", 
@@ -170,7 +187,7 @@ function Modal() {
                 <motion.div className='vvv' whileHover={{ scale: 0.98 }} transition={{ duration: 0.3 }} >
                     <img src={projet.imageDeCouverture} alt="Imags De Projet" />
                 </motion.div>
-                <Vollet projet={projet.projet} title={projet.title} annéé={projet.annéé} mission={projet.Mission} techno={projet.Techno} images={projet.images} link={projet.linkCode} />
+                <Vollet projet={projet.projet} title={projet.title} annéé={projet.annéé} mission={projet.Mission} problematiques={projet.problématiques} techno={projet.Techno} images={projet.images} link={projet.linkCode} />
                 </div> 
             ))}
         </div>
@@ -186,7 +203,9 @@ function Modal() {
                         <h2>{selectedProjets.title}</h2>
                         <p><strong>Date :</strong> {selectedProjets.annéé}</p>
                         <p><strong>Mission :</strong> {selectedProjets.Mission}</p>
+                        <p><strong>Les problématiques rencontrées :</strong> {selectedProjets.problématiques}</p>
                         <ul className='techno'>
+                            <p><strong>Compétences :</strong></p>
                             {selectedProjets.Techno.map((techno, index) => (
                                 <li  key={index}>{techno}</li>    
                             ))}
