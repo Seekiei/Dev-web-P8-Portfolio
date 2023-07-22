@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Dev-web-P8-Portfolio/static/css/main.d3e5475a.css",
-    "main.js": "/Dev-web-P8-Portfolio/static/js/main.51e823a2.js",
+    "main.js": "/Dev-web-P8-Portfolio/static/js/main.5398a96f.js",
     "static/media/pdp.webp": "/Dev-web-P8-Portfolio/static/media/pdp.182b02fed39d2cee5727.webp",
     "static/media/Projet3sophiebluel.webp": "/Dev-web-P8-Portfolio/static/media/Projet3sophiebluel.5a542a11241a33df2352.webp",
     "static/media/projet6kasa.webp": "/Dev-web-P8-Portfolio/static/media/projet6kasa.00322835730d2beaa4be.webp",
@@ -47,10 +47,10 @@
     "static/media/html-1.svg": "/Dev-web-P8-Portfolio/static/media/html-1.f318c8b1d5945fa9adc827ae94849cb1.svg",
     "static/media/linkedin.svg": "/Dev-web-P8-Portfolio/static/media/linkedin.0618cc9075b54a042c69cdf3e1cb1fa4.svg",
     "main.d3e5475a.css.map": "/Dev-web-P8-Portfolio/static/css/main.d3e5475a.css.map",
-    "main.51e823a2.js.map": "/Dev-web-P8-Portfolio/static/js/main.51e823a2.js.map"
+    "main.5398a96f.js.map": "/Dev-web-P8-Portfolio/static/js/main.5398a96f.js.map"
   },
   "entrypoints": [
     "static/css/main.d3e5475a.css",
-    "static/js/main.51e823a2.js"
+    "static/js/main.5398a96f.js"
   ]
 }
