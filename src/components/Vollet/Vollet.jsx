@@ -4,7 +4,7 @@ import { FaArrowUp, FaArrowDown } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion"
 
 
-function Vollet({projet, mission, problematiques, title, annéé, techno, images, link}) {
+function Vollet({projet, mission, problematiques, Solutions, title, annéé, techno, images, link}) {
 
     const [isOpen, setIsOpen] = useState(false) // useState est un hook de gestion d'état dans React Il est utilisé pour ajouter la gestion de l'état à un composant fonctionnel
 
@@ -23,6 +23,7 @@ function Vollet({projet, mission, problematiques, title, annéé, techno, images
                     <p><strong>Date :</strong> {annéé}</p>
                     <p><strong>Mission : </strong>{mission}</p>
                     <p><strong>Problématiques rencontrées : </strong>{problematiques}</p>
+                    <p><strong>Solutions : </strong>{Solutions}</p>
                     <ul className='techno'>
                             {techno.map((technos, index) => (
                                 <li key={index}>{technos}</li>    

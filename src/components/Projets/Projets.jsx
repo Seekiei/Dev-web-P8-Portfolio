@@ -48,6 +48,8 @@ function Modal() {
 
         "problématiques" : "Garantir que la page est accessible à tous les utilisateurs, format mobiles et tablettes (Responsive)",
 
+        "Solutions" : "Media Query en CSS ",
+
         "Techno" : [
             "Html", 
             "Css"
@@ -69,7 +71,9 @@ function Modal() {
             " ajout de boutons pour trier les médias et implémentation d'une modale permettant d'en uploader des nouveaux,",
             " récupération des données via des appels à l'API."],
         
-        "problématiques" : "Gérer les erreurs provenant de l'API lors de la suppression d'images, en cas d'échec de la requête",   
+        "problématiques" : "Empecher le chargement de la pages aprés soumition du formulaire et lors du clique sur le bouton supprimer de la modale ", 
+        
+        "Solutions" : "la méthode preventDefault() ne fonctionne pas donc j'ai dû passer par un autre live server de mon IDE ",
 
         "Techno" : [
             "Javascript",
@@ -95,6 +99,8 @@ function Modal() {
 
         "problématiques" : "Pas de problématiques rencontrées",
 
+        "Solutions" : "Ni de solutions",
+
         "Techno" : [
             'Jira'
         ],
@@ -113,6 +119,8 @@ function Modal() {
             " rédaction d'un rapport d'intervention détaillant un avant/après des performances en se basant sur des audit Lighthouse, la liste des modifications et une liste des cas d'usage du site.",],
 
         "problématiques" : "L'optimisations des images, ainsi que la mimification des scripts javaScript et Css",
+
+        "Solutions" : "Les images ont été optimiser en format Webp, mimifications du code a été fait par un site externe",
 
         "Techno" : [
                 "JQuery",
@@ -136,7 +144,9 @@ function Modal() {
             " ajout de composant React réutilisable et dynamique avec pour certains une gestion des data,",
             " présentation du projet au CTO en justifiant et défendant les décisions techniques."],
 
-        "problématiques" : "Gérer la récupération et la manipulation des données liées aux annonces immobilières, telles que les détails des propriétés, les images, les caractéristiques, etc. , et React Router pour gérer la navigation entre les différentes pages de l'application", 
+        "problématiques" : "Gérer la récupération et la manipulation des données liées aux annonces immobilières, telles que les détails des propriétés, les images, les caractéristiques, etc.", 
+
+        "Solutions" : "La récuperation des données a été faite avec la méthode map.",
 
         "Techno" : [
             "React",
@@ -160,7 +170,9 @@ function Modal() {
             " sécurisation de la base de données et optimisation des images,",
             " création d'un système d'authentification à mail unique.", ],
 
-        "problématiques" : " Implémentation d'un mécanisme permettant d'afficher la note globale sur 5 étoiles pour chaque livre. et ce dernier est calculée en fonction des évaluations données par les autres clients ",
+        "problématiques" : " Implémentation d'un mécanisme permettant d'afficher la note globale sur 5 étoiles pour chaque livre.",
+
+        "Solutions" : "Création d'une fonction permettant de récuperer l'id de l'utilisateur et la note a partir du corps de la requête, une condition pour que la note soit entre 0 et 5, et une instruction pour ajouté une nouvelles note dans la propriété ratings du livre. ",
 
         "Techno" : [
             "Node.Js",
@@ -187,7 +199,7 @@ function Modal() {
                 <motion.div className='vvv' whileHover={{ scale: 0.98 }} transition={{ duration: 0.3 }} >
                     <img src={projet.imageDeCouverture} alt="Imags De Projet" />
                 </motion.div>
-                <Vollet projet={projet.projet} title={projet.title} annéé={projet.annéé} mission={projet.Mission} problematiques={projet.problématiques} techno={projet.Techno} images={projet.images} link={projet.linkCode} />
+                <Vollet projet={projet.projet} title={projet.title} annéé={projet.annéé} mission={projet.Mission} problematiques={projet.problématiques} Solutions={projet.Solutions} techno={projet.Techno} images={projet.images} link={projet.linkCode} />
                 </div> 
             ))}
         </div>
@@ -204,6 +216,7 @@ function Modal() {
                         <p><strong>Date :</strong> {selectedProjets.annéé}</p>
                         <p><strong>Mission :</strong> {selectedProjets.Mission}</p>
                         <p><strong>Les problématiques rencontrées :</strong> {selectedProjets.problématiques}</p>
+                        <p><strong>Solutions : </strong>{selectedProjets.Solutions}</p>
                         <ul className='techno'>
                             <p><strong>Compétences :</strong></p>
                             {selectedProjets.Techno.map((techno, index) => (
